@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('33.jpg'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: rgb(248, 246, 246);
+      padding: 30px 50px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      width: 300px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 16px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      background-color: #f3678f;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #d95b7a; /* Darker shade for hover effect */
+    }
+
+    .forgot-password {
+      text-align: right;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    .forgot-password a {
+      color: #f3678f;
+      text-decoration: none;
+    }
+
+    .forgot-password a:hover {
+      text-decoration: underline;
+    }
+
+    .link {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .link a {
+      color: #f3678f;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form method="POST" action="/signup">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Username" required />
+      
+     <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required />
+      
+      <button type="submit"><a href="index.html">Signin</a></button>
+    </form>
+    <div class="link">
+      <p>Already have an account?<a href="/">Login</a></p>
+    </div>
+  </div>
+</body>
+</html>
